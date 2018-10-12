@@ -19,3 +19,35 @@
 
 #### 使用说明
 
+普通模式 ：public Texture2D QRCodeTool.NormalEncodeQRCode(string code , Vector2 vector2)
+
+代码示例:
+
+```
+rawImage.texture = codeTool.NormalEncodeQRCode(code, codeSize);
+```
+
+异步模式: public void EncodeQRCode(string code , Vector2 vector2)
+
+代码示例:
+
+
+```
+ public void AsyncCreate() {
+        if (codeTool.isEncodeing() == false) {
+            codeTool.EncodeQRCode(code, codeSize);
+            StartCoroutine(getQRCode());
+        }
+    }
+
+    IEnumerator getQRCode() {
+        while (true) {
+            if (codeTool.GetQRimage() != null) {
+                rawImage.texture = codeTool.GetQRimage();
+                break;
+            }
+            yield return 0;
+        }
+    }
+```
+
