@@ -19,9 +19,9 @@
 
 #### 使用说明
 
-普通模式 ：public Texture2D QRCodeTool.NormalEncodeQRCode(string code , Vector2 vector2)
+普通模式：public Texture2D QRCodeTool.NormalEncodeQRCode(string code , Vector2 vector2)
 
-代码示例:
+代码示例：
 
 ```
 rawImage.texture = codeTool.NormalEncodeQRCode(code, codeSize);
