@@ -5,7 +5,7 @@
 
 改工具支持两种模式生成二维码，视情况选择使用.
 
-**普通模式 [QRCodeTool.NormalEncodeQRCode(code, codeSize)]** : 使用简单，一句话搞得，但是在低性能设备上生成复杂二维码可能会卡顿。
+**普通模式 [QRCodeTool.NormalEncodeQRCode(code, codeSize)]** : 使用简单，只需要一句话搞定，但是在低性能设备上生成复杂二维码可能会卡顿。
 
 **异步模式 [QRCodeTool.EncodeQRCode(code, codeSize)]** : 使用相对麻烦，但不会出现卡顿问题。
 
