@@ -7,7 +7,7 @@
 
 **普通模式 [QRCodeTool.NormalEncodeQRCode(code, codeSize)]** : 使用简单，一句话搞得，但是在低性能设备上生成复杂二维码可能会卡顿。
 
-**一部模式 [QRCodeTool.EncodeQRCode(code, codeSize)]** : 使用相对麻烦，但不会出现卡顿问题。
+**异步模式 [QRCodeTool.EncodeQRCode(code, codeSize)]** : 使用相对麻烦，但不会出现卡顿问题。
 
 以下是两种模式的实际使用：
 
