@@ -20,7 +20,7 @@ public class SimpleQRCode : MonoBehaviour {
         rawImage.texture = codeTool.NormalEncodeQRCode(code, codeSize);
     }
 
-    public void SyncCreate() {
+    public void AsyncCreate() {
         if (codeTool.isEncodeing() == false) {
             codeTool.EncodeQRCode(code, codeSize);
             StartCoroutine(getQRCode());
